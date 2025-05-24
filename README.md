@@ -1,6 +1,8 @@
 # Nuxt Travel Log
 
-## Development Server
+A full stack application build with Nuxt
+
+## Setup
 
 Start the development server on `http://localhost:3000`:
 
@@ -9,18 +11,13 @@ Start the development server on `http://localhost:3000`:
 pnpm install
 ```
 
-```bash
-# npm
-npm run dev
+## Development Server
 
+Start the development server on `http://localhost:3000`:
+
+```bash
 # pnpm
 pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
 ## Production
