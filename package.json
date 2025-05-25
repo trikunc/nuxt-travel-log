@@ -15,8 +15,11 @@
   },
   "dependencies": {
     "@nuxt/eslint": "1.4.1",
+    "@nuxt/icon": "1.13.0",
+    "@tailwindcss/vite": "^4.1.7",
     "eslint": "^9.27.0",
     "nuxt": "^3.17.4",
+    "tailwindcss": "^4.1.7",
     "vue": "^3.5.14",
     "vue-router": "^4.5.1"
   },
@@ -31,9 +34,7 @@
     "lint-staged": "^16.0.0",
     "vue-tsc": "^2.2.10"
   },
-
   "lint-staged": {
     "*": "pnpm lint"
   }
-
 }
