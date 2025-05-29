@@ -2,12 +2,11 @@
 
 // import { relations } from "drizzle-orm";
 import { int, real, sqliteTable, text } from "drizzle-orm/sqlite-core";
+
 // import { createInsertSchema } from "drizzle-zod";
-
 // import type { SelectLocationLog } from "./location-log";
-
 // import { DescriptionSchema, LatSchema, LongSchema, NameSchema } from "../../zod-schemas";
-// import { user } from "./auth";
+import { user } from "./auth";
 // import { locationLog } from "./location-log";
 
 export const location = sqliteTable("location", {
@@ -17,7 +16,7 @@ export const location = sqliteTable("location", {
   description: text(),
   lat: real().notNull(),
   long: real().notNull(),
-  // userId: int().notNull().references(() => user.id, { onDelete: "cascade" }),
+  userId: int().notNull().references(() => user.id, { onDelete: "cascade" }),
   createdAt: int().notNull().$default(() => Date.now()),
   updatedAt: int().notNull().$default(() => Date.now()).$onUpdate(() => Date.now()),
 // }, t => [
