@@ -11,10 +11,7 @@ import { NuxtLink } from "#components";
     </div>
     <div class="navbar-end">
       <AppThemeToggle />
-      <button class="btn btn-accent">
-        Sign In With Github
-        <Icon name="tabler:brand-github" size="24px" />
-      </button>
+      <AuthButton />
     </div>
   </div>
 </template>
