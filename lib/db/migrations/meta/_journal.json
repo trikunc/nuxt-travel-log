@@ -8,6 +8,13 @@
       "when": 1748234079228,
       "tag": "0000_melted_ikaris",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1748503847388,
+      "tag": "0001_first_hydra",
+      "breakpoints": true
     }
   ]
 }
