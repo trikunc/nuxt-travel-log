@@ -12,7 +12,4 @@ const db = drizzle({
   schema,
 });
 
-console.log("TURSO_DATABASE_URL =", env.TURSO_DATABASE_URL);
-console.log("TURSO_AUTH_TOKEN =", env.TURSO_AUTH_TOKEN);
-
 export default db;
